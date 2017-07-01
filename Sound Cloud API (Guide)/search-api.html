@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SoundCloud How To-Guide</title>
+    <link rel="stylesheet" href="soundcloud.css" type="text/css">
+    <script src="soundcloud.js"></script>
+  </head>
+  <body style="background-color: #F4F6F6;">
+  <div class="banner">
+    <img src=slogo.png class="logo">
+    <img src=blogo.png class="blogo">
+  	<h1 class="header">Search API For Data</h1>
+    <button class=Button onClick="parent.location='intro.html'">Introduction</button>
+    <button class=Button onClick="parent.location='get-key.html'">Get API Key</button>
+    <button class=Button onClick="parent.location='request-access.html'">API Request</button>
+    <button class=Button onClick="parent.location='search-api.html'"style="background-color:yellow;">Search API</button>
+    <button class=Button onClick="parent.location='api-call.html'">Cool Stuff</button>
+  </div>
+  <h1>Searching For The API</h1>
+  <p>By now we should know exactly how to get a track information by the Query, which is essnetialy our Track ID. Now sound cloud doesnt let you access the track through Track name.<br/> So the same step wont apply into getting a track ID. Since sound cloud uses SDKs, we need to access the SDK and search for an Artist and get their different Track IDS.<br/></p>
+  <p>Click on the following link to navigate to the <a class=link href=https://developers.soundcloud.com/docs/api/guide>HTTP API GUIDE.</a></p>
+  <h3>Choose One</h3>
+  <p>As you can see in the picture below, SoundCloud gives you different varieties based on the details or Data needed for you application. In this case we will use search to find a <span class=redText>"Track ID"</span> for a specific artist.</p>
+  <img src=searchSDK.png class="SDK" border="1" style="position: relative; width: 300px; height: 400px; left: 20; top: 1px;">
+  </body>
+  <p>What we are trying to do now is to search for an Artist, and get differnet track name.</p>
+  <h3>1. Call The SoundCloud API</h3>
+  <p>By calling the SDK, we are now able to access all the librries that are offered from the backend("SounfCloud"). SDKs are widly used between many applications.</p>
+  <script async src="http://jsfiddle.net/teymourk/wburnz8r/2/embed/html/dark/"></script>
+  <h3>2. Search Function</h3>
+  <p>Based on Everything that you want for your application, Soundcloud will give you a funcion to call based on your Query to recieve all JSON Data you need. In this case this is how our Track search function will look like. "Genre" in this case is our Qury, since SoundCloud any type of music on their website, by typing Drake, your are specifictly mentioning what type of Genre your looking for.
+  <script async src="http://jsfiddle.net/teymourk/L9jvgcgp/embed/dark/"></script>
+  <h3>3.Putting It Together</h3>
+  <script async src="http://jsfiddle.net/teymourk/6n6p8wnk/embed/js,html/dark/"></script>
+  <p>Now After you run this, you have to open your browser console and check for the Data that came back from the SDK. This will be in an Array of different objects for different results that were found. Using the data recieved, we are now able to get the track ID and use that to get all the track informations. By clicking on the link you will see the JSON Document for the new Track ID <span class=redText>"181164088"</span> we recieved above. See Example Below.<br/><br/>
+   <a class=link href=http://api.soundcloud.com/tracks/181164088?client_id=5230ee8952a3bc806d3a14d7d7997df6>http://api.soundcloud.com/tracks/181164088?client_id=5230ee8952a3bc806d3a14d7d7997df6</a></p>
+  <img src=Data.png class="Data" border="1" style="position: relative; width: 600px; height: 400px; left: 0; top: 10px;">
+  <img src=Drake.png class="Data" border="1" style="position: relative; width: 600px; height: 400px; left: 50; top: 10px;">
+</html>
