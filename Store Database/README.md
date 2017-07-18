@@ -1,4 +1,4 @@
-# Telly
+# Intro To Databases Final Project (WishList)
 
 ![alt text](https://github.com/teymourk/Intro-To-Databases/blob/master/Store%20Database/Screen%20Shot%202017-07-18%20at%206.57.29%20AM.png "WishList")
 
