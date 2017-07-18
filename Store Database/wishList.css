@@ -1,0 +1,62 @@
+.banner {
+
+	position: relative;;
+	bottom: 20px;
+	height: 270px;
+	width: 100%;
+	right: 10px;
+	border-color: #7b8994;
+	background-color: #787473;
+}
+
+.header {
+
+	position: relative;
+	color: #3d464d;
+	bottom: 100px;
+	left: 20px;
+	top: 30px;
+	color: #FFFFFF;
+}
+
+.nameField {
+
+	position: relative;;
+	bottom: 20px;
+	top: 10px;
+	width: 40%;
+	left: 10px;
+	border-color: #7b8994;
+}
+
+.other_tables {
+
+	position: relative;;
+	bottom: 20px;
+	top: -245px;
+	width: 20%;
+	left: 800px;
+	border-color: #7b8994;
+}
+
+.ItemInfo {
+
+	position: relative;;
+	bottom: 20px;
+	top: -850px;
+	width: 45%;
+	left: 10px;
+	border-color: #7b8994;
+}
+
+.Create {
+
+	position: relative;;
+	bottom: 20px;
+	top: 15px;
+	width: 20%;
+	height: 30px;
+	left: 10px;
+	background-color: #28DC71;
+	color: white;
+}
